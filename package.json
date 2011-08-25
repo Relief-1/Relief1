@@ -1,0 +1,17 @@
+{
+  "author": "",
+  "name": "Relief1",
+  "description": "Dedicated to disaster relief and recovery",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Relief-1/Relief1.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "cradle" : "*"
+  },
+  "devDependencies": {}
+}
