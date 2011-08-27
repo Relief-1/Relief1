@@ -14,5 +14,7 @@
     "cradle" : "*",
     "settings" : "*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodeunit" : "*"
+  }
 }
