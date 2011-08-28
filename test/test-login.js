@@ -11,6 +11,8 @@ module.exports = testCase({
     var hash = crypto.createHash(settings.loginManager.hash);
     var salt = 'salt';
     
+    this.login = new login.Login();
+
     this.email = 'test@example.com';
     this.password = 'password';
     hash.update(salt + this.password);
@@ -31,7 +33,7 @@ module.exports = testCase({
   testCorrectLogin: function (test) {
     test.expect(2);
     var obj = this;
-    login.login(this.email, this.password, function (err, doc) {
+    this.login.userLogin(this.email, this.password, function (err, doc) {
       test.equal(err, null, 'there should be no error with correct credentials');
       test.equal(doc.id, obj.id);
       test.done();
@@ -39,20 +41,20 @@ module.exports = testCase({
   },
   testWrongPassword: function (test) {
     test.expect(2);
-    login.login(this.email, this.password + '-not-really', function (err, doc) {
-      test.equal(err, login.WRONG_PASSWORD, 
-        'login manager should return appropiate value');
-      test.equal(doc, null, 'there should be no document returned');
-      test.done();
-    });
+    this.login.userLogin(this.email, this.password + '-not-really', 
+      function (err, doc) {
+        test.ok(err, 'should return error when wrong password is supplied');
+        test.equal(doc, null, 'there should be no document returned');
+        test.done();
+      });
   },
   testWrongLogin: function (test) {
     test.expect(2);
-    login.login(this.email + '-not-really', this.password, function (err, doc) {
-      test.equal(err, login.NO_SUCH_USER, 
-        'login manager should return appropiate value');
-      test.equal(doc, null, 'there should be no document returned');
-      test.done();
+    this.login.userLogin(this.email + '-not-really', this.password, 
+      function (err, doc) {
+        test.ok(err, 'should return error when wrong login is supplied');
+        test.equal(doc, null, 'there should be no document returned');
+        test.done();
     });
   },
   tearDown: function (callback) {
