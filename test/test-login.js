@@ -62,6 +62,24 @@ module.exports = testCase({
     test.equal(salt.length, settings.loginManager.saltLength);
     test.done();
   },
+  testUserRegister: function (test) {
+    // TODO: test for invalid emails
+    test.expect(3);
+    var email = 'some-email@test.com';
+    var password = 'ninja';
+    this.login.userRegister(email, password, function (err, res) {
+      test.ok(!err, "shouldn't return error with valid data");
+      db.get('user-' + encodeURIComponent(email), function (err, doc) {
+        test.ok(!err, 'there should be no error when getting new user from DB');
+        test.equal(
+          doc.salt.length,
+          settings.loginManager.saltLength,
+          "salt's length should be equal to one in settings"
+        );
+        test.done();
+      });
+    });
+  },
   tearDown: function (callback) {
     db.remove(this.id, this.rev, callback);
   }
