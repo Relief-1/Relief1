@@ -57,6 +57,11 @@ module.exports = testCase({
         test.done();
     });
   },
+  testSaltGeneration: function (test) {
+    var salt = this.login.saltGenerate();
+    test.equal(salt.length, settings.loginManager.saltLength);
+    test.done();
+  },
   tearDown: function (callback) {
     db.remove(this.id, this.rev, callback);
   }
