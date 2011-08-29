@@ -10,7 +10,8 @@ exports.common = {
     }
   },
   loginManager: {
-    hash: 'sha512'
+    hash: 'sha512',
+    saltLength: 16
   }
 };
 
