@@ -66,18 +66,31 @@ module.exports = testCase({
     // TODO: test for invalid emails
     test.expect(3);
     var email = 'some-email@test.com';
+    var id = 'user-' + encodeURIComponent(email);
     var password = 'ninja';
     this.login.userRegister(email, password, function (err, res) {
       test.ok(!err, "shouldn't return error with valid data");
-      db.get('user-' + encodeURIComponent(email), function (err, doc) {
+
+      var rev = res.rev;
+
+      db.get(id, function (err, doc) {
         test.ok(!err, 'there should be no error when getting new user from DB');
         test.equal(
           doc.salt.length,
           settings.loginManager.saltLength,
           "salt's length should be equal to one in settings"
         );
+        db.remove(id, rev, function () {});
         test.done();
       });
+    });
+  },
+  testRegisterExistingUser: function (test) {
+    test.expect(2);
+    this.login.userRegister(this.email, 'whatever', function (err, res) {
+      test.ok(err, 'should return error when trying to register existing user');
+      test.equal(err.code, login.Login.USER_EXISTS, 'should return proper error code');
+      test.done();
     });
   },
   tearDown: function (callback) {
