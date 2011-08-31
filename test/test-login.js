@@ -6,6 +6,21 @@ settings.__reload('test');
 var db = require('../lib/db').db;
 var login = require('../lib/login');
 
+var invalidEmails = [
+  'invalid.email',
+  '@invalid.email',
+  'a@invalid',
+  'c@.pl'
+]
+
+var validEmails = [
+  'valid@email.com',
+  'valid+test@email.com',
+  'v@e.pl',
+  'CAPS@MAIL.ORG',
+  'test@multiple.sub.domains.org'
+]
+
 module.exports = testCase({
   setUp: function (callback) {
     var hash = crypto.createHash(settings.loginManager.hash);
@@ -56,6 +71,60 @@ module.exports = testCase({
         test.equal(doc, null, 'there should be no document returned');
         test.done();
     });
+  },
+  testSaltGeneration: function (test) {
+    var salt = this.login.saltGenerate();
+    test.equal(salt.length, settings.loginManager.saltLength);
+    test.done();
+  },
+  testUserRegister: function (test) {
+    // TODO: test for invalid emails
+    test.expect(3);
+    var email = 'some-email@test.com';
+    var id = 'user-' + encodeURIComponent(email);
+    var password = 'ninja';
+    this.login.userRegister(email, password, function (err, res) {
+      test.ok(!err, "shouldn't return error with valid data");
+
+      var rev = res.rev;
+
+      db.get(id, function (err, doc) {
+        test.ok(!err, 'there should be no error when getting new user from DB');
+        test.equal(
+          doc.salt.length,
+          settings.loginManager.saltLength,
+          "salt's length should be equal to one in settings"
+        );
+        db.remove(id, rev, function () {});
+        test.done();
+      });
+    });
+  },
+  testRegisterExistingUser: function (test) {
+    var self = this;
+
+    test.expect(3);
+    this.login.userRegister(this.email, 'whatever', function (err, res) {
+      test.ok(err, 'should return error when trying to register existing user');
+      test.equal(err.code, login.Login.USER_EXISTS, 'should return proper error code');
+
+      db.get(self.id, function (err, doc) {
+        test.equal(doc._rev, self.rev, 'document should not get overriden');
+        test.done();
+      });
+    });
+  },
+  testEmailValidation: function (test) {
+    var self = this;
+
+    test.expect(validEmails.length + invalidEmails.length);
+    validEmails.forEach(function (email) {
+      test.ok(self.login.emailValidate(email));
+    });
+    invalidEmails.forEach(function (email) {
+      test.ok(!self.login.emailValidate(email));
+    });
+    test.done();
   },
   tearDown: function (callback) {
     db.remove(this.id, this.rev, callback);
