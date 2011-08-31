@@ -86,11 +86,17 @@ module.exports = testCase({
     });
   },
   testRegisterExistingUser: function (test) {
-    test.expect(2);
+    var self = this;
+
+    test.expect(3);
     this.login.userRegister(this.email, 'whatever', function (err, res) {
       test.ok(err, 'should return error when trying to register existing user');
       test.equal(err.code, login.Login.USER_EXISTS, 'should return proper error code');
       test.done();
+
+      db.get(self.id, function (err, doc) {
+        test.equal(doc._rev, self.rev, 'document should not get overriden');
+      });
     });
   },
   tearDown: function (callback) {
