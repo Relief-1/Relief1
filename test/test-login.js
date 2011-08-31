@@ -6,6 +6,21 @@ settings.__reload('test');
 var db = require('../lib/db').db;
 var login = require('../lib/login');
 
+var invalidEmails = [
+  'invalid.email',
+  '@invalid.email',
+  'a@invalid',
+  'c@.pl'
+]
+
+var validEmails = [
+  'valid@email.com',
+  'valid+test@email.com',
+  'v@e.pl',
+  'CAPS@MAIL.ORG',
+  'test@multiple.sub.domains.org'
+]
+
 module.exports = testCase({
   setUp: function (callback) {
     var hash = crypto.createHash(settings.loginManager.hash);
@@ -98,6 +113,18 @@ module.exports = testCase({
         test.done();
       });
     });
+  },
+  testEmailValidation: function (test) {
+    var self = this;
+
+    test.expect(validEmails.length + invalidEmails.length);
+    validEmails.forEach(function (email) {
+      test.ok(self.login.emailValidate(email));
+    });
+    invalidEmails.forEach(function (email) {
+      test.ok(!self.login.emailValidate(email));
+    });
+    test.done();
   },
   tearDown: function (callback) {
     db.remove(this.id, this.rev, callback);
