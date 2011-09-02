@@ -12,12 +12,18 @@ There are no permanent websites with the purpose of preparing for, responding to
 
 ## Internals
 Here’s our list of technologies we are using to build this service.
+
 Back-end development libraries and tools
-• Node.js http://nodejs.org/
-• Socket.io https://github.com/LearnBoost/socket.io
-•	dnode https://github.com/substack/dnode
-•	Hook.io https://github.com/hookio/hook.io
-•	Cradle https://github.com/cloudhead/cradle
+
+* Node.js http://nodejs.org/
+
+* Socket.io https://github.com/LearnBoost/socket.io
+
+* dnode https://github.com/substack/dnode
+
+* Hook.io https://github.com/hookio/hook.io
+	
+* Cradle https://github.com/cloudhead/cradle
 
 Front-end development
 •	HTML
