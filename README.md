@@ -30,7 +30,7 @@ Databases
 ## Contributors
 We need your help
 
-A project of this scope and vision requires help from many people. There is room for anyone who is willing to help. It makes no difference if you are an experienced web developer or a stay at home mom looking for a way to contribute to humanity we want your help. Head on over to the We Need Your Help wiki to check out our open positions. Whether see anything particular role that interests you or you want to help but don't know how, please contact us or visit us at our forum.
+A project of this scope and vision requires help from many people. There is room for anyone who is willing to help.  Please look through our open tickets and contact us #relief1 on the Freenode IRC service if you have any questions. 
 
 Programmers:
 
