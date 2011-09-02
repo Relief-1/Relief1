@@ -1,12 +1,12 @@
-# relief1 - Disaster Preparedness, Relief, Recovery
+# Relief1 - Disaster Preparedness, Relief, Recovery
 Our mission is to be the place people go to before and after a disaster strikes. Whether you're a survivor, volunteer, multi-national non-profit or government agency, we want to provide you with the tools and services needed to quickly bring a state of normalcy back to those whose lives have been disrupted.
 
 
-Why?
+# Why?
 
 Nobody knows when a natural disaster will strike, and when they do, people turn to social media and ad hoc websites to disseminate information and seek help. Often times this leads to an inefficient system of placing needs with those who can help. Having watched my hometown of Joplin, Missouri being destroyed by one of the deadliest tornados in recorded history, I decided it is time to solve this problem for the last time.
 
-We believe there is a better way
+# We believe there is a better way
 
 There are no permanent websites with the purpose of preparing for, responding to and rebuilding after a disaster. We want to build a central hub designed from the ground up with a set of comprehensive tools and services powered by volunteers and fellow non-profits to solve this problem.
 
