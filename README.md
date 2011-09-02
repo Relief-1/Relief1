@@ -15,26 +15,35 @@ Here’s our list of technologies we are using to build this service.
 
 Back-end development libraries and tools
 
-* Node.js http://nodejs.org/
+* Node.js - http://nodejs.org/
 
-* Socket.io https://github.com/LearnBoost/socket.io
+* Socket.io - https://github.com/LearnBoost/socket.io
 
-* dnode https://github.com/substack/dnode
+* dnode - https://github.com/substack/dnode
 
-* Hook.io https://github.com/hookio/hook.io
+* Hook.io - https://github.com/hookio/hook.io
 	
-* Cradle https://github.com/cloudhead/cradle
+* Cradle - https://github.com/cloudhead/cradle
+
 
 Front-end development
-•	HTML
-•	CSS 
-•	jQuery - https://github.com/jquery/jquery
-•	Knockout.js  - https://github.com/SteveSanderson/knockout
+
+* HTML
+
+* CSS 
+
+* jQuery - https://github.com/jquery/jquery
+
+* Knockout.js  - https://github.com/SteveSanderson/knockout
 
 Databases
-•	Couchbase - http://www.couchbase.org/
+
+* Couchbase - http://www.couchbase.org/
+
 * GeoCouch - https://github.com/couchbase/geocouch
-•	Riak - http://wiki.basho.com/
+
+* Riak - http://wiki.basho.com/
+
 
 ## Contributors - We Need Your Help
 
