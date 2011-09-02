@@ -1,4 +1,4 @@
-# relief1
+# relief1 - Disaster Preparedness, Relief, Recovery
 Our mission is to be the place people go to before and after a disaster strikes. Whether you're a survivor, volunteer, multi-national non-profit or government agency, we want to provide you with the tools and services needed to quickly bring a state of normalcy back to those whose lives have been disrupted.
 
 
@@ -12,23 +12,25 @@ There are no permanent websites with the purpose of preparing for, responding to
 
 ## Internals
 Here’s our list of technologies we are using to build this service.
-Back-end development
-• Node.js
-•	Socket.io
-•	dnode
-•	Hook.io
-•	Cradle
+Back-end development libraries and tools
+• Node.js - http://nodejs.org/
+•	Socket.io - https://github.com/LearnBoost/socket.io
+•	dnode - https://github.com/substack/dnode
+•	Hook.io - https://github.com/hookio/hook.io
+•	Cradle - https://github.com/cloudhead/cradle
+
 Front-end development
 •	HTML
-•	CSS
-•	jQuery
-•	Knockout.js
-Databases
-•	CouchDB
-•	Riak
+•	CSS 
+•	jQuery - https://github.com/jquery/jquery
+•	Knockout.js  - https://github.com/SteveSanderson/knockout
 
-## Contributors
-We need your help
+Databases
+•	Couchbase - http://www.couchbase.org/
+* GeoCouch - https://github.com/couchbase/geocouch
+•	Riak - http://wiki.basho.com/
+
+## Contributors - We Need Your Help
 
 A project of this scope and vision requires help from many people. There is room for anyone who is willing to help.  Please look through our open tickets and contact us #relief1 on the Freenode IRC service if you have any questions. 
 
