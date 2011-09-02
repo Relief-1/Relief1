@@ -1,18 +1,35 @@
 # relief1
-Relief1 is a project for disaster preparedness, relief and recovery.
-In case of emergency, it collects information about missing people, available 
-resources and volunteers.
+Our Mission
+To be the place people go to before and after a disaster strikes. Whether you're a survivor, volunteer, multi-national non-profit or government agency, we want to provide you with the tools and services needed to quickly bring a state of normalcy back to those whose lives have been disrupted.
 
-It is supposed to overcome problem with media hype, which gets created by 
-uncontrolled flow of data.
+
+Why?
+
+Nobody knows when a natural disaster will strike, and when they do, people turn to social media and ad hoc websites to disseminate information and seek help. Often times this leads to an inefficient system of placing needs with those who can help. Having watched my hometown of Joplin, Missouri being destroyed by one of the deadliest tornados in recorded history, I decided it is time to solve this problem for the last time.
+
+We believe there is a better way
+There are no permanent websites with the purpose of preparing for, responding to and rebuilding after a disaster. We want to build a central hub designed from the ground up with a set of comprehensive tools and services powered by volunteers and fellow non-profits to solve this problem.
 
 ## Internals
-The project will be built upon node.js to provide maximum responsiveness. It will use Riak
-and MongoDB to store its data.
+Here’s our list of technologies we are using to build this service.
+Back-end development
+• Node.js
+•	Socket.io
+•	dnode
+•	Hook.io
+•	Cradle
+Front-end development
+•	HTML
+•	CSS
+•	jQuery
+•	Knockout.js
+Databases
+•	CouchDB
+•	Riak
 
 ## Contributors
-You want to contribute? Oh, we love you so much! We're open for designers, administrators, programmers and
-geeks of all kinds. 
+We need your help
+A project of this scope and vision requires help from many people. There is room for anyone who is willing to help. It makes no difference if you are an experienced web developer or a stay at home mom looking for a way to contribute to humanity we want your help. Head on over to the We Need Your Help wiki to check out our open positions. Whether see anything particular role that interests you or you want to help but don't know how, please contact us or visit us at our forum.
 
 Programmers:
 
@@ -22,4 +39,3 @@ Programmers:
 3. Commit.
 4. Push.
 5. Pull request.
-
