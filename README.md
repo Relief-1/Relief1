@@ -54,6 +54,7 @@ Programmers:
 0. Fork.
 1. Create a branch with some meaningful name.
 2. Hack (tests for new features will be appreciated)!
-3. Commit.
-4. Push.
-5. Pull request.
+3. Verify that the tests are still passing (`nodeunit test`).
+4. Commit.
+5. Push.
+6. Pull request.
