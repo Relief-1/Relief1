@@ -22,7 +22,7 @@ Back-end development libraries and tools
 * dnode - https://github.com/substack/dnode
 
 * Hook.io - https://github.com/hookio/hook.io
-	
+
 * Cradle - https://github.com/cloudhead/cradle
 
 
@@ -30,7 +30,7 @@ Front-end development
 
 * HTML
 
-* CSS 
+* CSS
 
 * jQuery - https://github.com/jquery/jquery
 
@@ -47,7 +47,7 @@ Databases
 
 ## Contributors - We Need Your Help
 
-A project of this scope and vision requires help from many people. There is room for anyone who is willing to help.  Please look through our open tickets and contact us #relief1 on the Freenode IRC service if you have any questions. 
+A project of this scope and vision requires help from many people. There is room for anyone who is willing to help.  Please look through our open tickets and contact us #relief1 on the Freenode IRC service if you have any questions.
 
 Programmers:
 
@@ -58,3 +58,4 @@ Programmers:
 4. Commit.
 5. Push.
 6. Pull request.
+
