@@ -23,20 +23,20 @@ var validEmails = [
 
 module.exports = testCase({
   setUp: function (callback) {
-    var hash = crypto.createHash(settings.loginManager.hash);
     var salt = 'salt';
     
     this.login = new login.Login();
 
     this.email = 'test@example.com';
     this.password = 'password';
-    hash.update(salt + this.password);
     this.user = {
-      hash: hash.digest('hex'),
-      salt: salt
+      hash: login.hash(salt, this.password),
+      salt: salt,
+      email: this.email
     };
     var obj = this;
-    db.save(encodeURIComponent('user-' + this.email), this.user, 
+
+    db.save('user-' + login.hashEmail(this.email), this.user,
       function (err, res) {
         if (err)
           callback(err);
@@ -81,7 +81,7 @@ module.exports = testCase({
     // TODO: test for invalid emails
     test.expect(3);
     var email = 'some-email@test.com';
-    var id = 'user-' + encodeURIComponent(email);
+    var id = 'user-' + login.hashEmail(email);
     var password = 'ninja';
     this.login.userRegister(email, password, function (err, res) {
       test.ok(!err, "shouldn't return error with valid data");
