@@ -11,7 +11,8 @@ exports.common = {
   },
   loginManager: {
     hash: 'sha512',
-    saltLength: 16
+    saltLength: 16,
+    saltEmail: '2571EuzCyPoQytoYvJd1aTeKnvnGXZ+T'
   }
 };
 
