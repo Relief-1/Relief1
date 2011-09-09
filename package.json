@@ -13,7 +13,9 @@
   "dependencies": {
     "cradle" : "*",
     "settings" : "*",
-    "hook.io" : "*"
+    "hook.io" : "*",
+    "dnode" : "*",
+    "node-static": "*"
   },
   "devDependencies": {
     "nodeunit" : "*"
