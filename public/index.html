@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test</title>
+    <script src='/js/hook.js'></script>
+  </head>
+  <body>
+    <script>
+      var Hook = require('/hook.js').Hook;
+      Hook = new Hook();
+      Hook.connect();
+      Hook.on('browser::ready', function () {
+        Hook.onAny(function (data) {
+          console.log(this.event, data);
+        });
+      });
+    </script>
+  </body>
+</html>
