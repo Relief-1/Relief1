@@ -13,6 +13,9 @@ exports.common = {
     hash: 'sha512',
     saltLength: 16,
     saltEmail: '2571EuzCyPoQytoYvJd1aTeKnvnGXZ+T'
+  },
+  server: {
+    port: 8080
   }
 };
 
