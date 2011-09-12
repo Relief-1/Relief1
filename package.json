@@ -13,7 +13,7 @@
   "dependencies": {
     "cradle" : "*",
     "settings" : "*",
-    "hook.io" : "*",
+    "hook.io" : "git://github.com/hookio/hook.io.git",
     "dnode" : "*",
     "node-static": "*"
   },
