@@ -10,6 +10,40 @@ Nobody knows when a natural disaster will strike, and when they do, people turn 
 
 There are no permanent websites with the purpose of preparing for, responding to and rebuilding after a disaster. We want to build a central hub designed from the ground up with a set of comprehensive tools and services powered by volunteers and fellow non-profits to solve this problem.
 
+
+
+
+##We’re going to help Survivors and those Impacted by disasters by:
+
+* Making it easy to submit Missing Person Reports, which we instantly share with search and rescue, local and national media as well as social media
+
+* Providing them with an efficient way to submit their needs be they material (Gluten-free food) or service based (medical care)
+
+* Allowing them to easily see material and service based resources on our interactive map
+
+* Making it possible to access our service via SMS
+
+
+##We’re going to help Volunteers by:
+
+* Providing them with an automatic notification system based on their skills and location
+
+* Helping them easily search and find where needs are located
+
+
+##We’re going to help Organizations by:
+
+* Making it possible to see where volunteers and staff are located on the map
+
+* Allowing organizers to set waypoints for the deployment of their staff and volunteers 
+
+* Giving them a way to create projects and assign tasks to volunteers, leading to measurable performance
+
+* Helping organizations manage their material resources, deployment and logistics
+
+
+
+
 ## Internals
 Here’s our list of technologies we are using to build this service.
 
