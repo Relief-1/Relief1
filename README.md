@@ -73,7 +73,6 @@ Back-end development libraries and tools
 
 * Hook.io - https://github.com/hookio/hook.io
 
-* Cradle - https://github.com/cloudhead/cradle
 
 
 Front-end development
@@ -84,12 +83,8 @@ Front-end development
 
 * jQuery - https://github.com/jquery/jquery
 
-* Knockout.js  - https://github.com/SteveSanderson/knockout
+* Sencha Touch - http://www.sencha.com/products/touch/
 
 Databases
-
-* Couchbase - http://www.couchbase.org/
-
-* GeoCouch - https://github.com/couchbase/geocouch
 
 * Riak - http://wiki.basho.com/
