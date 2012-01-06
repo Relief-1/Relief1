@@ -1,43 +1,19 @@
-# Relief1 - Disaster Preparedness, Relief, Recovery
-Our mission is to be the place people go to before and after a disaster strikes. Whether you're a survivor, volunteer, multi-national non-profit or government agency, we want to provide you with the tools and services needed to quickly bring a state of normalcy back to those whose lives have been disrupted.
+##Relief1 – Helping everyone make an impact on the world
+
+We are building an internet platform that’s focused on connecting people who want to make a difference for those in crisis. At the same time, we want to show everyone how their impact and influence on others can change the world.
+
+At Relief1, we want to help organizations receive donations and show the world through stories how they are helping. Individuals and businesses will be able to read these stories and give directly to these organizations simply and easily through their mobile phone or computer.  Because Relief1 will have social sharing and impact tracking built in from the beginning, we have a unique opportunity to connect with countless people around the world and help them make a difference.
+
+##Why are we doing this?
+We want to help everyone make an impact on the world.
+
+##How are we doing it?
+By helping anyone who wants to provide organizations with the aid they need to help those affected by natural disasters.
+
+##What are we doing?
+We are building a permanent platform on the internet that makes it easy and simple to donate money directly to organizations that are making a difference.  Anyone, anywhere in the world will be able to do this from a smart phone or computer.  We will also track everyone’s impact on the world and making his or her influence count.
 
 
-# Why?
-
-Nobody knows when a natural disaster will strike, and when they do, people turn to social media and ad hoc websites to disseminate information and seek help. Often times this leads to an inefficient system of placing needs with those who can help. Having watched my hometown of Joplin, Missouri being destroyed by one of the deadliest tornados in recorded history, I decided it is time to solve this problem for the last time.
-
-## We believe there is a better way
-
-There are no permanent websites with the purpose of preparing for, responding to and rebuilding after a disaster. We want to build a central hub designed from the ground up with a set of comprehensive tools and services powered by volunteers and fellow non-profits to solve this problem.
-
-
-## We’re going to help Survivors and those Impacted by disasters by:
-
-* Making it easy to submit Missing Person Reports, which we instantly share with search and rescue, local and national media as well as social media
-
-* Providing them with an efficient way to submit their needs be they material (Gluten-free food) or service based (medical care)
-
-* Allowing them to easily see material and service based resources on our interactive map
-
-* Making it possible to access our service via SMS
-
-
-## We’re going to help Volunteers by:
-
-* Providing them with an automatic notification system based on their skills and location
-
-* Helping them easily search and find where needs are located
-
-
-## We’re going to help Organizations by:
-
-* Making it possible to see where volunteers and staff are located on the map
-
-* Allowing organizers to set waypoints for the deployment of their staff and volunteers 
-
-* Giving them a way to create projects and assign tasks to volunteers, leading to measurable performance
-
-* Helping organizations manage their material resources, deployment and logistics
 
 
 # We Need Your Help
