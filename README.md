@@ -17,11 +17,11 @@ We are building a permanent platform on the internet that makes it easy and simp
 
 A project of this scope and vision requires help from many people. There is room for everyone who wants to help.
 
-* Want to help?  Check out our open tickets here: https://www.assembla.com/spaces/relief1/tickets/agile_planner?id=relief1
+# Want to help?
 
+* Check out our open tickets here on GitHub
+* Shoot us an email at contact@relief1.org and we will get back to you
 * Join us at  #relief1 on the Freenode IRC service if you have any ideas, questions, or need direction concerning helping out.
-
-
 
 ## Programmers:
 
