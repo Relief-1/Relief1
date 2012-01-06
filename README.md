@@ -1,4 +1,4 @@
-##Relief1 – Helping everyone make an impact on the world
+#Relief1 – Helping everyone make an impact on the world
 
 We are building an internet platform that’s focused on connecting people who want to make a difference for those in crisis. At the same time, we want to show everyone how their impact and influence on others can change the world.
 
@@ -13,9 +13,6 @@ By helping anyone who wants to provide organizations with the aid they need to h
 ##What are we doing?
 We are building a permanent platform on the internet that makes it easy and simple to donate money directly to organizations that are making a difference.  Anyone, anywhere in the world will be able to do this from a smart phone or computer.  We will also track everyone’s impact on the world and making his or her influence count.
 
-
-
-
 # We Need Your Help
 
 A project of this scope and vision requires help from many people. There is room for everyone who wants to help.
@@ -23,6 +20,7 @@ A project of this scope and vision requires help from many people. There is room
 * Want to help?  Check out our open tickets here: https://www.assembla.com/spaces/relief1/tickets/agile_planner?id=relief1
 
 * Join us at  #relief1 on the Freenode IRC service if you have any ideas, questions, or need direction concerning helping out.
+
 
 
 ## Programmers:
@@ -64,3 +62,6 @@ Front-end development
 Databases
 
 * Riak - http://wiki.basho.com/
+
+
+##Follow us on twitter:  @reliefone or visit our website: http://www.relief1.org/
