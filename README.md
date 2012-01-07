@@ -11,7 +11,7 @@ We want to help everyone make an impact on the world.
 By helping anyone who wants to provide organizations with the aid they need to help those affected by natural disasters.
 
 ##What are we doing?
-We are building a permanent platform on the internet that makes it easy and simple to donate money directly to organizations that are making a difference.  Anyone, anywhere in the world will be able to do this from a smart phone or computer.  We will also track everyone’s impact on the world and making his or her influence count.
+We are building a permanent platform on the internet that makes it easy and simple to donate money directly to organizations that are making a difference.  Anyone, anywhere in the world will be able to do this from a smart phone or computer.  We will also track everyone’s impact on the world,  making his or her influence count.
 
 # We Need Your Help
 
